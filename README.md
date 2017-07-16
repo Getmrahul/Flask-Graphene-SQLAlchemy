@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ## Running Flask Server
 Go to the root dir and run the below line in the terminal.
 ```
-pip install -r requirements.txt
+python app.py
 ```
 ## Creating a new Database
 Create a database(Used SQLite) with the table structure mentioned in *struct.sql* and update the database name in *database.py* file.
