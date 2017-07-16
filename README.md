@@ -1,5 +1,5 @@
 # Python-Flask & Graphene-SQLAlchemy(GraphQL) Example
-This is a example project for using GraphQL with Flask using Graphene-SQLAlchemy.
+This is an example project for using GraphQL with Flask using Graphene-SQLAlchemy.
 
 ## Installing Requirements
 Use Virtualenv and install the packages.
@@ -12,7 +12,7 @@ Go to the root dir and run the below line in the terminal.
 pip install -r requirements.txt
 ```
 ## Creating a new Database
-Create a database(I used sqlite) with the table structure mentioned in *struct.sql* and update the database name in *database.py* file.
+Create a database(Used SQLite) with the table structure mentioned in *struct.sql* and update the database name in *database.py* file.
 
 ## Testing GraphQL
 Below are the example query for adding new user, getting all users, searching for user with username and updating username with email id.
