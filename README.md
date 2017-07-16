@@ -11,7 +11,21 @@ Go to the root dir and run the below line in the terminal.
 ```
 pip install -r requirements.txt
 ```
-## Creating database
-Create a database with the table structure mentioned in *struct.sql* and update the database name in *database.py* file.
+## Creating a new Database
+Create a database(I used sqlite) with the table structure mentioned in *struct.sql* and update the database name in *database.py* file.
+
 ## Testing GraphQL
-First let's add some users for which use the following query
+### Adding New User
+```
+mutation {
+  createUser(name: "Rahul", email: "hello@rahulm.me", username: "rahulmfg") {
+    user {
+      id,
+      name,
+      email,
+      username
+    }
+    ok
+  }
+}
+```
