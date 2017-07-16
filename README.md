@@ -15,7 +15,7 @@ python app.py
 Create a database(Used SQLite) with the table structure mentioned in *struct.sql* and update the database name in *database.py* file.
 
 ## Testing GraphQL
-Below are the example query for adding new user, getting all users, searching for user with username and updating username with email id.
+Go to http://localhost:5000/graphql to try GraphQL. Below are the example query for adding new user, getting all users, searching for user with username and updating username with email id.
 ### Adding a New User
 ```
 mutation {
