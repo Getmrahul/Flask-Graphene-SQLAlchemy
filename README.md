@@ -15,10 +15,11 @@ pip install -r requirements.txt
 Create a database(I used sqlite) with the table structure mentioned in *struct.sql* and update the database name in *database.py* file.
 
 ## Testing GraphQL
-### Adding New User
+Below are the example query for adding new user, getting all users, searching for user with username and updating username with email id.
+### Adding a New User
 ```
 mutation {
-  createUser(name: "Rahul", email: "hello@rahulm.me", username: "rahulmfg") {
+  createUser(name: "abc", email: "hello@abc.com", username: "abc") {
     user {
       id,
       name,
@@ -26,6 +27,42 @@ mutation {
       username
     }
     ok
+  }
+}
+```
+### Getting All Users List
+```
+{
+  allUsers {
+    edges {
+      node {
+        name,
+        email,
+        username
+      }
+    }
+  }
+}
+```
+### Finding a User with Username
+```
+{
+  findUser(username: "rahulmfg") {
+    id,
+    name,
+    email
+  }
+}
+```
+### Updating a Username With Email ID
+```
+mutation {
+  changeUsername(email: "abc@abc.com", username:"newabc") {
+    user {
+      name,
+      email,
+      username
+    }
   }
 }
 ```
