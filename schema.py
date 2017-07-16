@@ -9,6 +9,7 @@ class Users(SQLAlchemyObjectType):
 	    model = UserModel
 	    interfaces = (relay.Node, )
 
+# Used to Create New User
 class createUser(graphene.Mutation):
 	class Input:
 		name = graphene.String()
@@ -24,7 +25,7 @@ class createUser(graphene.Mutation):
 		db_session.commit()
 		ok = True
 		return createUser(user=user, ok=ok)
-
+# Used to Change Username with Email
 class changeUsername(graphene.Mutation):
 	class Input:
 		username = graphene.String()
