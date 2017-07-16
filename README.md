@@ -14,8 +14,10 @@ python app.py
 ## Creating a new Database
 Create a database(Used SQLite) with the table structure mentioned in *struct.sql* and update the database name in *database.py* file.
 ```
-#database.py
+database.py
+
 # Replace 'sqlite:///rfg.db' with your path to database
+
 engine = create_engine('sqlite:///rfg.db', convert_unicode=True)
 
 ```
