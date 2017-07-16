@@ -54,7 +54,7 @@ mutation {
   }
 }
 ```
-### Updating a Username With Email ID
+### Updating Username With Email ID
 ```
 mutation {
   changeUsername(email: "abc@abc.com", username:"newabc") {
