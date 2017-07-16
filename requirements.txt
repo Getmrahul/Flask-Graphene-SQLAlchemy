@@ -1,0 +1,17 @@
+click==6.7
+Flask==0.12.2
+Flask-GraphQL==1.4.1
+graphene==1.4.1
+graphene-sqlalchemy==1.1.1
+graphql-core==1.1
+graphql-relay==0.4.5
+iso8601==0.1.11
+itsdangerous==0.24
+Jinja2==2.9.6
+MarkupSafe==1.0
+promise==2.0.2
+singledispatch==3.4.0.3
+six==1.10.0
+SQLAlchemy==1.1.11
+typing==3.6.1
+Werkzeug==0.12.2
