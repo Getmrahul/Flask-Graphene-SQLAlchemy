@@ -12,9 +12,10 @@ db_session = scoped_session(sessionmaker(autocommit=False,
 Base = declarative_base()
 Base.query = db_session.query_property()
 
+
 class User(Base):
-	__tablename__ = 'users'
-	id = Column(Integer, primary_key=True)
-	name = Column(Text)
-	email = Column(Text)
-	username = Column(String(255))
+    table_name = 'users'
+    id = Column(Integer, primary_key=True)
+    name = Column(Text)
+    email = Column(Text)
+    username = Column(String(255))
